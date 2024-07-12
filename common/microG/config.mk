@@ -22,4 +22,8 @@ PRODUCT_PACKAGES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(PARASITE_PREBUILTS)/common/microG
+
+# Set SetupWizard mode to DISABLED for workaround looping issue.
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.setupwizard.mode=DISABLED
 endif
