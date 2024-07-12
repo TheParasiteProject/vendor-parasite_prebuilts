@@ -58,6 +58,7 @@ android_app_import {
         "androidx.window.sidecar",
     ],
     privileged: true,
+    skip_preprocessed_apk_checks: true,
     product_specific: true,
     required: [
         "permissions-com.google.android.gms.xml",
@@ -77,6 +78,7 @@ android_app_import {
         enabled: true,
     },
     privileged: true,
+    skip_preprocessed_apk_checks: true,
     system_ext_specific: true,
 }
 
@@ -91,6 +93,7 @@ android_app_import {
         enabled: true,
     },
     privileged: true,
+    skip_preprocessed_apk_checks: true,
     product_specific: true,
 }
 
