@@ -6,4 +6,3 @@ runtime_resource_overlay {
     product_specific: true,
     aaptflags: ["--keep-raw-values"],
 }
- 

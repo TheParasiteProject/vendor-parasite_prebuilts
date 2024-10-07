@@ -43,7 +43,7 @@ android_app_import {
     name: "GmsCore",
     owner: "microG",
     apk: "common/product/priv-app/GmsCore/GmsCore.apk",
-	overrides: ["PrebuiltGmsCore"],
+    overrides: ["PrebuiltGmsCore"],
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -71,7 +71,7 @@ android_app_import {
     name: "GsfProxy",
     owner: "microG",
     apk: "common/system_ext/priv-app/GsfProxy/GsfProxy.apk",
-	overrides: ["GoogleServicesFramework"],
+    overrides: ["GoogleServicesFramework"],
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -86,7 +86,7 @@ android_app_import {
     name: "PhoneskyCompanion",
     owner: "microG",
     apk: "common/product/priv-app/PhoneskyCompanion/PhoneskyCompanion.apk",
-	overrides: ["Phonesky"],
+    overrides: ["Phonesky"],
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -98,10 +98,10 @@ android_app_import {
 }
 
 dex_import {
-	name: "com.google.android.maps",
-	owner: "Google",
-	jars: ["common/product/framework/com.google.android.maps.jar"],
-	product_specific: true,
+    name: "com.google.android.maps",
+    owner: "Google",
+    jars: ["common/product/framework/com.google.android.maps.jar"],
+    product_specific: true,
     required: [
         "com.google.android.maps.xml",
     ],
