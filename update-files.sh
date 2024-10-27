@@ -31,12 +31,12 @@ function getApkFromOnline() {
 	getFile $target_apk_url $target_dir $out_file
 }
 
-function getAkaneFoundationApks() {
-	# Akane Foundation
-	local akane_fdn_dir=$COMMON_DIR/AkaneFoundation
+function getFoedusProgrammeApks() {
+	# United Software
+	local foedus_pgrm_dir=$COMMON_DIR/FoedusProgramme
 
 	# Accord
-	# local acc_name=AkaneFoundation
+	# local acc_name=FoedusProgramme
 	# local app_name=Accord
 	# local app_file='Accord.*.apk'
 	# local target_dir="$akane_fdn_dir/common/product/app/$app_name"
@@ -46,14 +46,14 @@ function getAkaneFoundationApks() {
 	local acc_name=AkaneTan
 	local app_name=Gramophone
 	local app_file='Gramophone.*.apk'
-	local target_dir="$akane_fdn_dir/common/product/app/$app_name"
+	local target_dir="$foedus_pgrm_dir/common/product/app/$app_name"
 	getApkFromOnline $acc_name $app_name $app_name $app_file $app_name $target_dir
 
 	# Omni
-	local acc_name=AkaneFoundation
+	local acc_name=FoedusProgramme
 	local app_name=Omni
 	local app_file='app-release.apk'
-	local target_dir="$akane_fdn_dir/common/product/app/$app_name"
+	local target_dir="$foedus_pgrm_dir/common/product/app/$app_name"
 	getApkFromOnline $acc_name $app_name $app_name $app_file $app_name $target_dir
 }
 
@@ -83,7 +83,7 @@ function getMicroG() {
 	getApkFromOnline $acc_name $app_name $app_name $app_file $app_name $target_dir
 }
 
-getAkaneFoundationApks
+getFoedusProgrammeApks
 getMicroG
 
 unset COMMON_DIR
