@@ -7,7 +7,12 @@ android_app_import {
     name: "Accord",
     owner: "AkaneFoundation",
     apk: "common/product/app/Accord/Accord.apk",
-    overrides: ["Eleven"],
+    overrides: [
+        "Eleven",
+        "Twelve",
+        "Music",
+        "UniversalMediaPlayer",
+    ],
     preprocessed: true,
     presigned: true,
     dex_preopt: {
@@ -26,6 +31,9 @@ android_app_import {
     apk: "common/product/app/Gramophone/Gramophone.apk",
     overrides: [
         "Eleven",
+        "Twelve",
+        "Music",
+        "UniversalMediaPlayer",
         "Accord",
     ],
     preprocessed: true,
